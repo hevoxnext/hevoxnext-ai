@@ -35,6 +35,7 @@ st.write("Upload your Resume and Job Description (JD) to match and optimize.")
 resume_file = st.file_uploader("Upload Resume (Text file)", type=["txt", "pdf", "docx"])
 jd_file = st.file_uploader("Upload Job Description (Text file)", type=["txt", "pdf", "docx"])
 
+
 if resume_file and jd_file:
     # Read and extract text from uploaded resume and job description
     resume_text = extract_text_from_file(resume_file)
